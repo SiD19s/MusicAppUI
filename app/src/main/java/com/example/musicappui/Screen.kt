@@ -27,3 +27,9 @@ sealed class Screen(val title: String, val route: String) {
 
         }
 }
+
+val screensInDrawer = listOf(
+    Screen.DrawerScreen.Account,
+    Screen.DrawerScreen.Subscription,
+    Screen.DrawerScreen.AddAccount,
+)
