@@ -5,12 +5,12 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 
 class MainViewModel: ViewModel() {
-    private val _currenntScreen: MutableState<Screen> = mutableStateOf(Screen.DrawerScreen.AddAccount)
+    private val _currentScreen: MutableState<Screen> = mutableStateOf(Screen.DrawerScreen.AddAccount)
 
-    val currtScreen: MutableState<Screen>
-        get() = _currenntScreen
+    val currentScreen: MutableState<Screen>
+        get() = _currentScreen
 
     fun setCurrentScreen(screen:Screen){
-        _currenntScreen.value = screen
+        _currentScreen.value = screen
     }
 }
