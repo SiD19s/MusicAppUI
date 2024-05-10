@@ -40,8 +40,8 @@ sealed class Screen(val title: String, val route: String) {
 
 val screenInBottom = listOf(
     Screen.BottomScreen.Home,
-    Screen.BottomScreen.Library,
-    Screen.BottomScreen.Browse
+    Screen.BottomScreen.Browse,
+    Screen.BottomScreen.Library
 )
 
 val screensInDrawer = listOf(

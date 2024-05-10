@@ -44,6 +44,7 @@ import com.example.musicappui.screenInBottom
 import com.example.musicappui.screensInDrawer
 import com.example.musicappui.ui.theme.AccountDialog
 import com.example.musicappui.ui.theme.AccountView
+import com.example.musicappui.ui.theme.Home
 import com.example.musicappui.ui.theme.Subscription
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
@@ -169,6 +170,7 @@ fun Navigation(navController: NavController, viewModel: MainViewModel, pd:Paddin
     NavHost(navController = navController as NavHostController,
         startDestination = Screen.DrawerScreen.Account.route, modifier = Modifier.padding(pd) ){
         composable(Screen.BottomScreen.Home.bRoute){
+            Home()
 
         }
         composable(Screen.BottomScreen.Library.bRoute){
